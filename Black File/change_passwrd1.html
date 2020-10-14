@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles1.css" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<style>
+ul {
+  list-style-type: none;margin: 0;padding: 0;overflow: hidden;background-color: #333;
+}
+li {
+  float: left;
+}
+li a, .dropbtn {
+  display: inline-block;
+  color:white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn { background-color: #9e9e9e;}
+</style>
+<title>change_psswrd1</title>
+</head>
+<body>
+
+<ul>
+    <li><a href="home1.html">HOME</a></li>
+    <li><a href="about1.html">ABOUT US</a></li>
+    <li><a href="book_ticket1.html">BOOK TICKETS</a></li>
+    <li><a href="#bookings">MY BOOKINGS</a></li>
+    <li><a href="#myaccount">MY ACCOUNT</a></li>
+    <li><a href="change_passwrd1.html">CHANGE PASSWORD</a></li>
+    <li><a href="#logout">LOG OUT</a></li>
+
+  <div class="main">
+    <div class="forms3">
+        <div>
+            <label> New Password: </label>
+            <input title="Password must contain at least 8 characters, including UPPER/lowercase and numbers." type ="password" required name="pwd1" pattern= "^(?=\\S*[a-z])(?=\\S*[A-Z])(?=\\S*\\d)(?=\\S*[^\\w\\s])\\S{8,16}$" onchange="form.pwd2.pattern = RegExp.escape(this.value);">
+        </div>
+        <br>
+        <div>
+            <label> Confirm Password: </label>
+            <input title="Please enter the same Password as above." type="password" required name="pwd2">
+        </div>
+        <br>
+            <input type="submit" value="Change Password" title="Change password">
+            <input type="reset">
+        </div>
+    <div class="formright"></div>
+  </div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+</html>
