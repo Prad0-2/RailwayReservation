@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- materizlize icon -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    
+    <title> change password</title>
+  </head>
+  <body>
+
+
+    <!-- -----------------------------Navbar-------------------------------------------= -->
+    <div class="navbar-fixed">
+      <nav class="teal">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo" style="margin-left: 10px">Logo</a>
+          <ul>
+            <li>
+              <a href="home.html" class="home">Home</a>
+            </li>
+            <li>
+              <a href="#.html" class="trains">Trains</a>
+            </li>
+            <li>
+              <a href="book_ticket.html" class="meals">Book Ticket</a>
+            </li>
+          </ul>
+          <ul id="nav-mobile" class="right" style="margin-right: 80px">
+            <li style="margin-right: 40px"><a href="about.html">About Us</a></li>
+            <li><a style="margin-right: 40px" href="change_psswrd.html">change password</a></li>
+            <li><a style="margin-right: 40px" href="register.html">Register</a></li>
+            <button
+              class="btn waves-effect waves-light"
+              
+              type="submit"
+              name="action"
+             
+            >
+              <a href="login.html">login</a>
+            </button>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- -----------------------------End Navbar-------------------------------------------= -->
+
+
+    <div class="main">
+      <div class="form"  action=" " method="POST">
+        <div>
+          <label> New Password: </label>
+          <input title="Password must contain at least 8 characters, including UPPER/lowercase and numbers." type ="password" required name="pwd1" pattern= "^(?=\\S*[a-z])(?=\\S*[A-Z])(?=\\S*\\d)(?=\\S*[^\\w\\s])\\S{8,16}$" onchange="form.pwd2.pattern = RegExp.escape(this.value);">
+      </div>
+      <br>
+      <div>
+          <label> Confirm Password: </label>
+          <input title="Please enter the same Password as above." type="password" required name="pwd2">
+      </div>
+      <br>
+          <input type="submit" value="Change Password" title="Change password">
+          <input type="reset">
+      </div>
+      <div class="formright"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("select").formSelect();
+        $(".datepicker").datepicker();
+        $("input.autocomplete").autocomplete({
+          data: {
+            Apple: null,
+            Microsoft: null,
+            Google: "https://placehold.it/250x250",
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
+
+
+

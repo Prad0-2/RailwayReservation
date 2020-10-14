@@ -1,0 +1,105 @@
+.home
+{
+  margin-left: 100px;
+  font-weight: 370;
+  font-size: 20px;
+}
+.trains {
+    margin-left: 40px;
+    font-weight: 370;
+    font-size: 20px;
+  }
+  .meals {
+    margin-left: 40px;
+    font-weight: 370;
+    font-size: 20px;
+  }
+  .main {
+    margin: 50px 50px;
+  }
+  .forms {
+    margin-top: 50px;
+    margin-left: 450px;
+    height: 600px;
+    width: 500px;
+    border: 2px solid #009688;
+    box-shadow: 1px 1px 10px 1px #009688;
+    padding: 50px;
+    position: relative;
+  }
+  .forms3 {
+    margin-top: 50px;
+    margin-left: 450px;
+    height: 1400px;
+    width: 500px;
+    border: 2px solid #009688;
+    box-shadow: 1px 1px 10px 1px #009688;
+    padding: 50px;
+    position: relative;
+  }
+  .forms1 {
+    margin-top: 50px;
+    margin-left: 450px;
+    height: 600px;
+    width: 500px;
+    border: 4px solid #333;
+    padding: 50px;
+    position: absolute;
+  }
+  .form {
+    margin-top: 50px;
+    margin-left: 450px;
+    height: 400px;
+    width: 500px;
+    border: 2px solid #009688;
+    box-shadow: 1px 1px 10px 1px #009688;
+    padding: 50px;
+    position: relative;
+  }
+
+
+
+  .forms2{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 450px;
+    height: 600px;
+    width: 500px;
+    padding: 50px;
+    border: 4px solid #333;
+  }
+.browser-default{
+  line-height: 15px;
+  width: 300px;
+}
+
+
+  .paasen{
+    position: relative; 
+    left: 10px; 
+    top: -30px;
+    
+  }
+  /* .cardtype
+  {
+    position: relative;
+    left:12px ;
+    top:20px ;  
+    border: 1px solid black;
+    
+    
+  } */
+
+  .cardtype{
+    position: relative;
+    border: 1px solid black !important;
+    left: 12px; top:20px;
+  }
+  
+  .expiry{
+    position: relative;
+    left:12px ;
+    top:40px ;  
+    border: 1px solid black !important;
+    width: 130px;
+  }
