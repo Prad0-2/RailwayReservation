@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <!-- <?php include('form_process.php'); ?> -->
+    <link rel="stylesheet" href="styles.css" type="text/css" />
     <!-- Compiled and minified CSS -->
     <link
       rel="stylesheet"
@@ -58,26 +59,37 @@
 
     <div class="main">
       <div class="forms">
+        <form id = "train_tickets" action="<?= $_SERVER['PHP_SELF']; ?>" method="post">
         <div class="row">
           <div class="input-field col s12">
-            <input type="text" id="autocomplete-input" class="autocomplete" />
-            <label for="autocomplete-input">From</label>
+
+
+          <div class = "row">
+            <div class="input-field col s12">
+              <input type="text" id="autocomplete-input" class="autocomplete" />
+              <label for="autocomplete-input">From</label>
+              </div>
           </div>
 
-          <div
-            class="input-field col s12"
+          <div class="row">
+          <div class="input-field col s12"
             style="position: relative; top: -20px"
           >
             <input type="text" id="autocomplete-input" class="autocomplete" />
             <label for="autocomplete-input">To</label>
           </div>
+          </div>
 
+
+          <div class="row">
           <div
             class="input-field col s12"
             style="position: relative; top: -30px"
           >
             <label for="dt">Date</label>
             <input type="text" id="dt" class="datepicker" />
+            <span class="error">* <?php echo $dateErr;?></span>
+          </div>
           </div>
             <p style="position:relative; bottom:15px;left:5px;font-size:18px;color:#696666;">Passengers</p>
             
@@ -88,7 +100,7 @@
             style="position: relative; top: -40px"
           >
             <input id="icon_prefix" type="text" placeholder="Adult" class="validate" />
-            
+            <span class="error">* <?php echo $adultErr;?></span>
 
           </div>
           <div
@@ -96,7 +108,8 @@
             style="position: relative; top: -40px"
           >
             <input id="icon_prefix" type="text" placeholder="Child" class="validate" />
-            
+            <span class="error">* <?php echo $childErr;?></span>
+
           </div>
           <div
             class="input-field col s12"
@@ -104,19 +117,32 @@
           >
             <select>
               <option value="" disabled selected>Choose your option</option>
-              <option value="1">Option 1</option>
-              <option value="2">Option 2</option>
-              <option value="3">Option 3</option>
+              <option value="1">Anubhuti Class (EA)</option>
+              <option value="2">AC First Class (1A)</option>
+              <option value="3">Exec. Chair Car (EC)</option>
+              <option value="4">AC 2 Tier (2A)</option>
+              <option value="5">First Class (FC)</option>
+              <option value="6">AC 3 Tier (3A)</option>
+              <option value="7">AC 3 Economy (3E)</option>
+              <option value="8">AC Chair car (CC)</option>
+              <option value="9">Sleeper (SL)</option>
+              <option value="10">Second Sitting (2S)</option>
+              <span class="error">* <?php echo $selectErr;?></span>
+        
             </select>
-            <label>Materialize Select</label>
+            <label>All Classes</label>
           </div>
           <div style="position: absolute; bottom: 10px; right: 20px">
-            <a class="waves-effect waves-light btn">Submit</a>
+            <!-- <a class="waves-effect waves-light btn" type="submit" value="Submit" >Submit</a> -->
+            <input type="submit" name="submit" value="Submit"> 
+
           </div>
           <div style="position: absolute; bottom: 10px; right: 130px">
             <a class="waves-effect waves-light btn">Reset</a>
           </div>
         </div>
+        </div>
+      </form>
       </div>
       <div class="formright"></div>
     </div>
@@ -141,3 +167,5 @@
 
 
 
+//9965053758
+//
